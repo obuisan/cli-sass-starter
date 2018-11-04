@@ -1,0 +1,29 @@
+{
+  "name": "node-sass-starter",
+  "version": "1.0.0",
+  "description": "Node-Sass workflow starter",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/obuisan/node-sass-starter.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build:sass": "node-sass ./sass -o ./css --output-style compressed  --source-map true --omit-source-map-url --importer node_modules/node-sass-glob-importer/dist/cli.js",
+    "build:autoprefixer": "postcss ./css/*.css --omit-source-map-url --use autoprefixer -d ./css --no-map",
+    "build": "npm run build:sass & npm run build:autoprefixer",
+    "watch": "node-sass -w ./sass -o ./css --output-style expanded --source-map true --importer node_modules/node-sass-glob-importer/dist/cli.js"
+  },
+  "keywords": [
+    "autoprefixer",
+    "node-sass",
+    "sass"
+  ],
+  "author": "obuisan",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "node-sass": "^4.9.4",
+    "node-sass-glob-importer": "^5.2.0",
+    "postcss-cli": "^6.0.1"
+  }
+}
