@@ -1,7 +1,7 @@
 {
-  "name": "node-sass-starter",
-  "version": "1.0.0",
-  "description": "Node-Sass workflow starter",
+  "name": "cli-sass-starter",
+  "version": "1.0.1",
+  "description": "CLI Sass workflow starter",
   "repository": {
     "type": "git",
     "url": "git://github.com/obuisan/node-sass-starter.git"

@@ -1,4 +1,4 @@
-# node-sass-starter
+# cli-sass-starter
 
 [SASS](https://sass-lang.com/) ( [node-sass](https://github.com/sass/node-sass) ) workflow starter.
 
